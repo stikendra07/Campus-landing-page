@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="circle"></div>
+    <section>
+
+        <header>
+            <a href="#" class="logo"><img src="logo conv.png" alt=""></a>
+            <ul>
+                <li>home</li>
+                <li>menu</li>
+                <li>help</li>
+                <li>contact</li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text-box">
+                <h2>it is not just shoe<br>it is <span id="comfort">comfort</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus debitis nobis ad pariatur id!
+                    Explicabo molestiae dolor quasi possimus cupiditate?
+                    a</p>
+                <a href="#">learn more</a>
+            </div>
+            <div class="img-box"><img src="image1.png" alt="" class="primary"></div>
+        </div>
+        <ul class="thumb">
+            <li><img src="image1.png" alt="" onclick="imgSlider('image1.png');changeCirclecolor('#ff7f50')"></li>
+            <li><img src="image3.png" alt="" onclick="imgSlider('image3.png');changeCirclecolor('#800080')"></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.primary').src = anything;
+
+        }
+        function changeCirclecolor(color) {
+            const circle = document.querySelector(".circle");
+            circle.style.background = color;
+            // let comfort = document.getElementById('comfort');
+            // // console.log(comfort)
+            // comfort.style.color = '#800080';
+        }
+    </script>
+</body>
+
+</html>
